@@ -3,6 +3,1027 @@
   "name": ".",
   "children": [
     {
+      "path": ".git",
+      "name": ".git",
+      "children": [
+        {
+          "path": ".git/branches",
+          "name": "branches",
+          "children": [],
+          "size": 0,
+          "type": "directory"
+        },
+        {
+          "path": ".git/hooks",
+          "name": "hooks",
+          "children": [
+            {
+              "path": ".git/hooks/applypatch-msg.sample",
+              "name": "applypatch-msg.sample",
+              "extension": ".sample",
+              "size": 478,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/commit-msg.sample",
+              "name": "commit-msg.sample",
+              "extension": ".sample",
+              "size": 896,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/fsmonitor-watchman.sample",
+              "name": "fsmonitor-watchman.sample",
+              "extension": ".sample",
+              "size": 4726,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/post-update.sample",
+              "name": "post-update.sample",
+              "extension": ".sample",
+              "size": 189,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-applypatch.sample",
+              "name": "pre-applypatch.sample",
+              "extension": ".sample",
+              "size": 424,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-commit.sample",
+              "name": "pre-commit.sample",
+              "extension": ".sample",
+              "size": 1643,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-merge-commit.sample",
+              "name": "pre-merge-commit.sample",
+              "extension": ".sample",
+              "size": 416,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-push.sample",
+              "name": "pre-push.sample",
+              "extension": ".sample",
+              "size": 1374,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-rebase.sample",
+              "name": "pre-rebase.sample",
+              "extension": ".sample",
+              "size": 4898,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/pre-receive.sample",
+              "name": "pre-receive.sample",
+              "extension": ".sample",
+              "size": 544,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/prepare-commit-msg.sample",
+              "name": "prepare-commit-msg.sample",
+              "extension": ".sample",
+              "size": 1492,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/push-to-checkout.sample",
+              "name": "push-to-checkout.sample",
+              "extension": ".sample",
+              "size": 2783,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            },
+            {
+              "path": ".git/hooks/update.sample",
+              "name": "update.sample",
+              "extension": ".sample",
+              "size": 3650,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            }
+          ],
+          "size": 23513,
+          "type": "directory"
+        },
+        {
+          "path": ".git/info",
+          "name": "info",
+          "children": [
+            {
+              "path": ".git/info/exclude",
+              "name": "exclude",
+              "extension": "",
+              "size": 240,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            }
+          ],
+          "size": 240,
+          "type": "directory"
+        },
+        {
+          "path": ".git/logs",
+          "name": "logs",
+          "children": [
+            {
+              "path": ".git/logs/refs",
+              "name": "refs",
+              "children": [
+                {
+                  "path": ".git/logs/refs/heads",
+                  "name": "heads",
+                  "children": [
+                    {
+                      "path": ".git/logs/refs/heads/main",
+                      "name": "main",
+                      "extension": "",
+                      "size": 170,
+                      "type": "file",
+                      "language": "txt",
+                      "content": "No preview available for this file due to file size or file type"
+                    }
+                  ],
+                  "size": 170,
+                  "type": "directory"
+                },
+                {
+                  "path": ".git/logs/refs/remotes",
+                  "name": "remotes",
+                  "children": [
+                    {
+                      "path": ".git/logs/refs/remotes/origin",
+                      "name": "origin",
+                      "children": [
+                        {
+                          "path": ".git/logs/refs/remotes/origin/HEAD",
+                          "name": "HEAD",
+                          "extension": "",
+                          "size": 164,
+                          "type": "file",
+                          "language": "txt",
+                          "content": "No preview available for this file due to file size or file type"
+                        },
+                        {
+                          "path": ".git/logs/refs/remotes/origin/main",
+                          "name": "main",
+                          "extension": "",
+                          "size": 152,
+                          "type": "file",
+                          "language": "txt",
+                          "content": "No preview available for this file due to file size or file type"
+                        }
+                      ],
+                      "size": 316,
+                      "type": "directory"
+                    }
+                  ],
+                  "size": 316,
+                  "type": "directory"
+                }
+              ],
+              "size": 486,
+              "type": "directory"
+            },
+            {
+              "path": ".git/logs/HEAD",
+              "name": "HEAD",
+              "extension": "",
+              "size": 170,
+              "type": "file",
+              "language": "txt",
+              "content": "No preview available for this file due to file size or file type"
+            }
+          ],
+          "size": 656,
+          "type": "directory"
+        },
+        {
+          "path": ".git/objects",
+          "name": "objects",
+          "children": [
+            {
+              "path": ".git/objects/08",
+              "name": "08",
+              "children": [
+                {
+                  "path": ".git/objects/08/0d6c77ac21bb2ef88a6992b2b73ad93daaca92",
+                  "name": "0d6c77ac21bb2ef88a6992b2b73ad93daaca92",
+                  "extension": "",
+                  "size": 248,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 248,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/13",
+              "name": "13",
+              "children": [
+                {
+                  "path": ".git/objects/13/711a395a9ff2bc838fa47f0abff426fc4b84e4",
+                  "name": "711a395a9ff2bc838fa47f0abff426fc4b84e4",
+                  "extension": "",
+                  "size": 276,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 276,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/1a",
+              "name": "1a",
+              "children": [
+                {
+                  "path": ".git/objects/1a/42b92a92e1774a2a3db77f547e792fb845cdc8",
+                  "name": "42b92a92e1774a2a3db77f547e792fb845cdc8",
+                  "extension": "",
+                  "size": 216,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 216,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/1f",
+              "name": "1f",
+              "children": [
+                {
+                  "path": ".git/objects/1f/03afeece5ac28064fa3c73a29215037465f789",
+                  "name": "03afeece5ac28064fa3c73a29215037465f789",
+                  "extension": "",
+                  "size": 185,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 185,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/23",
+              "name": "23",
+              "children": [
+                {
+                  "path": ".git/objects/23/cf465624b0480409f8efa11d1d4a612e1cd485",
+                  "name": "cf465624b0480409f8efa11d1d4a612e1cd485",
+                  "extension": "",
+                  "size": 473,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 473,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/26",
+              "name": "26",
+              "children": [
+                {
+                  "path": ".git/objects/26/12038d53804ff451f27ace02f1b474cb961dab",
+                  "name": "12038d53804ff451f27ace02f1b474cb961dab",
+                  "extension": "",
+                  "size": 1299,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 1299,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/29",
+              "name": "29",
+              "children": [
+                {
+                  "path": ".git/objects/29/6ef47462d0ccf6acc8bf73bac4694512e5fb8f",
+                  "name": "6ef47462d0ccf6acc8bf73bac4694512e5fb8f",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/3c",
+              "name": "3c",
+              "children": [
+                {
+                  "path": ".git/objects/3c/0d5d96b7aad3596c8e1264a083baa29c5bb339",
+                  "name": "0d5d96b7aad3596c8e1264a083baa29c5bb339",
+                  "extension": "",
+                  "size": 263,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 263,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/44",
+              "name": "44",
+              "children": [
+                {
+                  "path": ".git/objects/44/3a34d6ec39030652d403a2a0a1896177a0622d",
+                  "name": "3a34d6ec39030652d403a2a0a1896177a0622d",
+                  "extension": "",
+                  "size": 318,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 318,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/49",
+              "name": "49",
+              "children": [
+                {
+                  "path": ".git/objects/49/50dbc45a8d25727c40aef145bbd055deb51392",
+                  "name": "50dbc45a8d25727c40aef145bbd055deb51392",
+                  "extension": "",
+                  "size": 114,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 114,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/52",
+              "name": "52",
+              "children": [
+                {
+                  "path": ".git/objects/52/53d3ad9e6be6690549cb255f5952337b02401d",
+                  "name": "53d3ad9e6be6690549cb255f5952337b02401d",
+                  "extension": "",
+                  "size": 196,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 196,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/53",
+              "name": "53",
+              "children": [
+                {
+                  "path": ".git/objects/53/71687f9fee1953b100759eb30dbb980206bd26",
+                  "name": "71687f9fee1953b100759eb30dbb980206bd26",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/58",
+              "name": "58",
+              "children": [
+                {
+                  "path": ".git/objects/58/beeaccd87e230076cab531b8f418f40b6d1aeb",
+                  "name": "beeaccd87e230076cab531b8f418f40b6d1aeb",
+                  "extension": "",
+                  "size": 1268,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 1268,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/5a",
+              "name": "5a",
+              "children": [
+                {
+                  "path": ".git/objects/5a/1872f980a8a85b8d6aab527de05a89ea502aa5",
+                  "name": "1872f980a8a85b8d6aab527de05a89ea502aa5",
+                  "extension": "",
+                  "size": 203,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 203,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/64",
+              "name": "64",
+              "children": [
+                {
+                  "path": ".git/objects/64/586e4616764502eb3c178b10ecb1fb14ddaf40",
+                  "name": "586e4616764502eb3c178b10ecb1fb14ddaf40",
+                  "extension": "",
+                  "size": 364,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 364,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/68",
+              "name": "68",
+              "children": [
+                {
+                  "path": ".git/objects/68/a7abeaca6aac23d26d8ca47c204e68b0b48e53",
+                  "name": "a7abeaca6aac23d26d8ca47c204e68b0b48e53",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/7b",
+              "name": "7b",
+              "children": [
+                {
+                  "path": ".git/objects/7b/46ddc283f47791c9e3dfc931b472250438690a",
+                  "name": "46ddc283f47791c9e3dfc931b472250438690a",
+                  "extension": "",
+                  "size": 150,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 150,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/7f",
+              "name": "7f",
+              "children": [
+                {
+                  "path": ".git/objects/7f/b7d7f9fcf36c0a91fa7fa0f2ccd76337d264ac",
+                  "name": "b7d7f9fcf36c0a91fa7fa0f2ccd76337d264ac",
+                  "extension": "",
+                  "size": 128,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 128,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/82",
+              "name": "82",
+              "children": [
+                {
+                  "path": ".git/objects/82/e8443578c2fd7a99096ad218f8d1262f2393aa",
+                  "name": "e8443578c2fd7a99096ad218f8d1262f2393aa",
+                  "extension": "",
+                  "size": 642,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 642,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/84",
+              "name": "84",
+              "children": [
+                {
+                  "path": ".git/objects/84/fc2d9191f4d412aac828332e015572343415dd",
+                  "name": "fc2d9191f4d412aac828332e015572343415dd",
+                  "extension": "",
+                  "size": 457,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 457,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/8e",
+              "name": "8e",
+              "children": [
+                {
+                  "path": ".git/objects/8e/29b36dea7f04ae8729d8b33ecc05c3c9b0fe46",
+                  "name": "29b36dea7f04ae8729d8b33ecc05c3c9b0fe46",
+                  "extension": "",
+                  "size": 223,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 223,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/8f",
+              "name": "8f",
+              "children": [
+                {
+                  "path": ".git/objects/8f/2609b7b3e0e3897ab3bcaad13caf6876e48699",
+                  "name": "2609b7b3e0e3897ab3bcaad13caf6876e48699",
+                  "extension": "",
+                  "size": 188,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 188,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/9e",
+              "name": "9e",
+              "children": [
+                {
+                  "path": ".git/objects/9e/61a7f8f4e89ecc61ff86560c937649188e18b6",
+                  "name": "61a7f8f4e89ecc61ff86560c937649188e18b6",
+                  "extension": "",
+                  "size": 204,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 204,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/a1",
+              "name": "a1",
+              "children": [
+                {
+                  "path": ".git/objects/a1/1777cc471a4344702741ab1c8a588998b1311a",
+                  "name": "1777cc471a4344702741ab1c8a588998b1311a",
+                  "extension": "",
+                  "size": 3468,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 3468,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/a2",
+              "name": "a2",
+              "children": [
+                {
+                  "path": ".git/objects/a2/391d4e751de2b261ca38229ba3ea9ec18b878f",
+                  "name": "391d4e751de2b261ca38229ba3ea9ec18b878f",
+                  "extension": "",
+                  "size": 134,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 134,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/a4",
+              "name": "a4",
+              "children": [
+                {
+                  "path": ".git/objects/a4/e47a6545bc15971f8f63fba70e4013df88a664",
+                  "name": "e47a6545bc15971f8f63fba70e4013df88a664",
+                  "extension": "",
+                  "size": 9658,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 9658,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/aa",
+              "name": "aa",
+              "children": [
+                {
+                  "path": ".git/objects/aa/069f27cbd9d53394428171c3989fd03db73c76",
+                  "name": "069f27cbd9d53394428171c3989fd03db73c76",
+                  "extension": "",
+                  "size": 861,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 861,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/ae",
+              "name": "ae",
+              "children": [
+                {
+                  "path": ".git/objects/ae/bc2de0d9d1507d7eef97d39dbeef5c0becce6a",
+                  "name": "bc2de0d9d1507d7eef97d39dbeef5c0becce6a",
+                  "extension": "",
+                  "size": 207,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 207,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/be",
+              "name": "be",
+              "children": [
+                {
+                  "path": ".git/objects/be/d49c8f900372ee8272333f2fb6bd4d2ed139ed",
+                  "name": "d49c8f900372ee8272333f2fb6bd4d2ed139ed",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/c2",
+              "name": "c2",
+              "children": [
+                {
+                  "path": ".git/objects/c2/35f5ada6e71df17b55b214a15503871d829379",
+                  "name": "35f5ada6e71df17b55b214a15503871d829379",
+                  "extension": "",
+                  "size": 197,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 197,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/c7",
+              "name": "c7",
+              "children": [
+                {
+                  "path": ".git/objects/c7/9b187b4957760e1c6cc4d90ce81007b069551e",
+                  "name": "9b187b4957760e1c6cc4d90ce81007b069551e",
+                  "extension": "",
+                  "size": 348529,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 348529,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/cb",
+              "name": "cb",
+              "children": [
+                {
+                  "path": ".git/objects/cb/c124582dea43315902888b5e611b243b2eaef6",
+                  "name": "c124582dea43315902888b5e611b243b2eaef6",
+                  "extension": "",
+                  "size": 408,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 408,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/dd",
+              "name": "dd",
+              "children": [
+                {
+                  "path": ".git/objects/dd/ead058a8cbe922b5a6696e785881788fcfa236",
+                  "name": "ead058a8cbe922b5a6696e785881788fcfa236",
+                  "extension": "",
+                  "size": 968,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 968,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/e9",
+              "name": "e9",
+              "children": [
+                {
+                  "path": ".git/objects/e9/e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e",
+                  "name": "e57dc4d41b9b46e05112e9f45b7ea6ac0ba15e",
+                  "extension": "",
+                  "size": 74,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 74,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/f2",
+              "name": "f2",
+              "children": [
+                {
+                  "path": ".git/objects/f2/c4ed5bb0e3b96b462384b9acee9eb0f84f46be",
+                  "name": "c4ed5bb0e3b96b462384b9acee9eb0f84f46be",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/f7",
+              "name": "f7",
+              "children": [
+                {
+                  "path": ".git/objects/f7/9a4c88dae2fd386805726ea555739c9556e358",
+                  "name": "9a4c88dae2fd386805726ea555739c9556e358",
+                  "extension": "",
+                  "size": 53,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 53,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/fa",
+              "name": "fa",
+              "children": [
+                {
+                  "path": ".git/objects/fa/fa56c4d2856acc4f7d66a0ac2cce28797a26dc",
+                  "name": "fa56c4d2856acc4f7d66a0ac2cce28797a26dc",
+                  "extension": "",
+                  "size": 7305,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 7305,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/fc",
+              "name": "fc",
+              "children": [
+                {
+                  "path": ".git/objects/fc/44b0a3796c0e0a64c3d858ca038bd4570465d9",
+                  "name": "44b0a3796c0e0a64c3d858ca038bd4570465d9",
+                  "extension": "",
+                  "size": 5338,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 5338,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/info",
+              "name": "info",
+              "children": [],
+              "size": 0,
+              "type": "directory"
+            },
+            {
+              "path": ".git/objects/pack",
+              "name": "pack",
+              "children": [],
+              "size": 0,
+              "type": "directory"
+            }
+          ],
+          "size": 384880,
+          "type": "directory"
+        },
+        {
+          "path": ".git/refs",
+          "name": "refs",
+          "children": [
+            {
+              "path": ".git/refs/heads",
+              "name": "heads",
+              "children": [
+                {
+                  "path": ".git/refs/heads/main",
+                  "name": "main",
+                  "extension": "",
+                  "size": 41,
+                  "type": "file",
+                  "language": "txt",
+                  "content": "No preview available for this file due to file size or file type"
+                }
+              ],
+              "size": 41,
+              "type": "directory"
+            },
+            {
+              "path": ".git/refs/remotes",
+              "name": "remotes",
+              "children": [
+                {
+                  "path": ".git/refs/remotes/origin",
+                  "name": "origin",
+                  "children": [
+                    {
+                      "path": ".git/refs/remotes/origin/HEAD",
+                      "name": "HEAD",
+                      "extension": "",
+                      "size": 30,
+                      "type": "file",
+                      "language": "txt",
+                      "content": "No preview available for this file due to file size or file type"
+                    },
+                    {
+                      "path": ".git/refs/remotes/origin/main",
+                      "name": "main",
+                      "extension": "",
+                      "size": 41,
+                      "type": "file",
+                      "language": "txt",
+                      "content": "No preview available for this file due to file size or file type"
+                    }
+                  ],
+                  "size": 71,
+                  "type": "directory"
+                }
+              ],
+              "size": 71,
+              "type": "directory"
+            },
+            {
+              "path": ".git/refs/tags",
+              "name": "tags",
+              "children": [],
+              "size": 0,
+              "type": "directory"
+            }
+          ],
+          "size": 112,
+          "type": "directory"
+        },
+        {
+          "path": ".git/COMMIT_EDITMSG",
+          "name": "COMMIT_EDITMSG",
+          "extension": "",
+          "size": 15,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": ".git/config",
+          "name": "config",
+          "extension": "",
+          "size": 371,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": ".git/description",
+          "name": "description",
+          "extension": "",
+          "size": 73,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": ".git/FETCH_HEAD",
+          "name": "FETCH_HEAD",
+          "extension": "",
+          "size": 102,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": ".git/HEAD",
+          "name": "HEAD",
+          "extension": "",
+          "size": 21,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": ".git/index",
+          "name": "index",
+          "extension": "",
+          "size": 2670,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        }
+      ],
+      "size": 412653,
+      "type": "directory"
+    },
+    {
       "path": "public",
       "name": "public",
       "children": [
@@ -73,6 +1094,40 @@
           "name": "components",
           "children": [
             {
+              "path": "src/components/breadcrumbs",
+              "name": "breadcrumbs",
+              "children": [
+                {
+                  "path": "src/components/breadcrumbs/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 329,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import React from \"react\";\nimport { useLocation } from \"react-router-dom\";\n\nconst BreadCrumbs = () => {\n  let location = useLocation();\n\n  return (\n    <small className=\"breadcrumbs\">\n      {location.pathname === '/' ? undefined : location.pathname.split('/').join(' ≻ ')}\n    </small>\n  );\n  };\n\n  export default BreadCrumbs;\n"
+                }
+              ],
+              "size": 329,
+              "type": "directory"
+            },
+            {
+              "path": "src/components/explorer",
+              "name": "explorer",
+              "children": [
+                {
+                  "path": "src/components/explorer/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 141,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import React from \"react\";\n\nconst Explorer = () => {\n  return <div className=\"explorer\"><h1>Explorer</h1></div>\n};\n\nexport default Explorer;\n"
+                }
+              ],
+              "size": 141,
+              "type": "directory"
+            },
+            {
               "path": "src/components/tabs",
               "name": "tabs",
               "children": [
@@ -80,17 +1135,17 @@
                   "path": "src/components/tabs/index.js",
                   "name": "index.js",
                   "extension": ".js",
-                  "size": 1319,
+                  "size": 1469,
                   "type": "file",
                   "language": "js",
-                  "content": "import React, { useEffect, useState } from \"react\";\nimport { NavLink, useLocation } from \"react-router-dom\";\n\nconst Tabs = () => {\n  let location = useLocation();\n  const [tabs, setTabs] = useState([]);\n\n  const handleClick = (e, i) => {\n    if (!e.target.previousSibling.classList.contains('active-tab')) {\n      e.preventDefault();\n    }\n    const t = tabs.filter((tab, index) => i !== index);\n    setTabs([...t]);\n  };\n\n  useEffect(() => {\n    if (!tabs.includes(location.pathname)) {\n      setTabs([...tabs, location.pathname]);\n    }\n  }, [location, tabs]);\n\n    return (\n      <div className=\"tabs\">\n        {\n          tabs.length && tabs.map((tab, i) => {\n            const t = tab.split('/');\n            const tabName = t[t.length - 1];\n            return (<div className=\"tab\" key={i}>\n              <NavLink \n                to={tab} \n                className={({ isActive }) => isActive ? 'active-tab' : undefined}\n              >\n                {tabName}\n              </NavLink>\n              {\n                tab === '/' ? \n                undefined : \n                <NavLink\n                  onClick={e => handleClick(e, i)}\n                  to={tabs[i - 1]}\n                >x</NavLink>\n              }\n            </div>)\n          })\n        }\n      </div>\n    );\n  };\n\n  export default Tabs;"
+                  "content": "import React, { useEffect, useState } from \"react\";\nimport { NavLink, useLocation } from \"react-router-dom\";\n\nconst Tabs = () => {\n  let location = useLocation();\n  const [tabs, setTabs] = useState([]);\n\n  const handleClick = (e, i) => {\n    if (!e.target.previousSibling.classList.contains('active-tab')) {\n      e.preventDefault();\n    }\n    const t = tabs.filter((tab, index) => i !== index);\n    setTabs([...t]);\n  };\n\n  useEffect(() => {\n    if (!tabs.includes(location.pathname) && location.pathname !== '/') {\n      setTabs([...tabs, location.pathname]);\n    }\n  }, [location, tabs]);\n\n    return (\n      <div className=\"tabs\">\n        {\n          tabs.length > 0 && tabs.filter(tab => tab !== '/').map((tab, i) => {\n            const t = tab.split('/');\n            const tabName = t[t.length - 1];\n\n            return (<div className=\"tab\" key={i}>\n              <NavLink \n                title={tab}\n                to={tab} \n                className={({ isActive }) => isActive ? 'active-tab' : undefined}\n              >\n                {tabName}\n              </NavLink>\n              <NavLink\n                title=\"close\"\n                className=\"close-button\"\n                onClick={e => handleClick(e, i)}\n                to={tabs.length === 1 ? '/' : i === 0 ? tabs[i + 1] : tabs[i - 1]}\n              >\n                &otimes;\n              </NavLink>\n            </div>)\n          })\n        }\n      </div>\n    );\n  };\n\n  export default Tabs;\n"
                 }
               ],
-              "size": 1319,
+              "size": 1469,
               "type": "directory"
             }
           ],
-          "size": 1319,
+          "size": 1939,
           "type": "directory"
         },
         {
@@ -122,13 +1177,13 @@
                   "path": "src/pages/layout/index.js",
                   "name": "index.js",
                   "extension": ".js",
-                  "size": 478,
+                  "size": 555,
                   "type": "file",
                   "language": "js",
-                  "content": "import React from 'react';\nimport { Outlet } from \"react-router-dom\";\nimport renderDirectoryStructure from \"../../render-directory-structure\";\nimport data from '../../data.json';\nimport Tabs from '../../components/tabs';\n\nconst Layout = () => (\n  <div className=\"layout\">\n    <div className='explorer'>\n      <h1>Explorer</h1>\n    </div>\n    <Tabs />\n    <nav className=\"nav\">\n      {renderDirectoryStructure(data)}\n    </nav>\n    <Outlet />\n  </div>\n);\n\nexport default Layout;\n"
+                  "content": "import React from 'react';\nimport { Outlet } from \"react-router-dom\";\nimport renderDirectoryStructure from \"../../render-directory-structure\";\nimport data from '../../data.json';\nimport Tabs from '../../components/tabs';\nimport BreadCrumbs from '../../components/breadcrumbs';\nimport Explorer from '../../components/explorer';\n\nconst Layout = () => (\n  <div className=\"layout\">\n    <Explorer />\n    <Tabs />\n    <BreadCrumbs />\n    <nav className=\"nav\">\n      {renderDirectoryStructure(data)}\n    </nav>\n    <Outlet />\n  </div>\n);\n\nexport default Layout;\n"
                 }
               ],
-              "size": 478,
+              "size": 555,
               "type": "directory"
             },
             {
@@ -152,10 +1207,10 @@
               "path": "src/pages/index.css",
               "name": "index.css",
               "extension": ".css",
-              "size": 3369,
+              "size": 3620,
               "type": "file",
               "language": "css",
-              "content": "body {\n  overscroll-behavior-y: none;\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 14px;\n  background-color: rgb(1, 22, 39);\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n.layout {\n  display: grid;\n  height: 100vh;\n  grid-template-areas:\n    'explorer tabs'\n    'nav code';\n  grid-template-columns: 300px 1fr;\n  grid-template-rows: 40px 1fr;\n}\n\n.explorer {\n  background-color: hsl(206, 100%, 3%);\n  display: flex;\n  align-items: center;\n  padding-inline-start: 15px; \n}\n\n.explorer h1 {\n  color:hsl(0, 0%, 70%);\n  font-size: 12px;\n  font-weight: 400;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n}\n\n.tabs {\n  display: flex;\n  background-color: hsl(206, 100%, 3%);\n  overflow: scroll;\n  column-gap: 1px;\n}\n\n.tab {\n  display: flex;\n  background-color: hsl(206, 100%, 11%);\n  color: hsl(0, 0%, 70%);\n  padding: 0 10px;\n  column-gap: 10px;\n}\n\n.tab a {\n  color: hsl(0, 0%, 50%);\n  text-decoration: none;\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n}\n\n.tab a.active-tab {\n  color:hsl(0, 0%, 100%)\n}\n\n.tab:has(.active-tab),\n.tab:has(.active-tab):hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.tab:hover {\n  background-color: hsl(206, 100%, 9%);\n}\n\n.nav {\n  color: white;\n  overflow: scroll;\n  background-color: hsl(206, 100%, 3%);\n}\n\n.nav ul {\n  margin: 0;\n  padding-left: 0;\n}\n\n.nav ul li summary,\n.nav ul li a {\n  padding: 4px;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.nav li {\n  display: block;\n  position: relative;\n}\n\n.nav li:hover {\n  cursor: pointer;\n}\n\n.nav li:has(li:hover) summary:hover,\n.nav li:has(li:hover) a:hover,\n.nav > ul > li > details > summary:hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.nav li:has(a.active) a.active {\n  background-color: hsl(206, 100%, 6%);\n}\n\n/* .nav ul li a,\n.nav ul li summary {\n  padding-left: 25px;\n} */\n\n.nav > ul > li li :is(a, summary) {\n  padding-left: 20px;\n}\n\n.nav > ul > li li li :is(a, summary) {\n  padding-left: 35px;\n}\n\n.nav > ul > li li li li :is(a, summary) {\n  padding-left: 50px;\n}\n\n.nav > ul > li li li li ul :is(a, summary) {\n  padding-left: 65px;\n}\n\n.nav details[open] > summary::marker {\n  content: '▿ ';\n}\n\n.nav details summary::marker {\n  content: '▹ ';\n  color:hsl(0, 0%, 70%);\n}\n\n.nav a {\n  color: white; \n  text-decoration: none;\n  display: block;\n  /* width: 100%; */\n}\n\n.nav-root > details > summary {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: bold;\n}\n\n.code {\n  /* height: 100vh; */\n  /* flex-grow: 1; */\n  background-color: rgb(1, 22, 39);\n  box-sizing: border-box;\n}\n\npre {\n  margin: 0;\n}\n\n.code:has(.loader) {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  border: 10px solid;\n  border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n"
+              "content": "body {\n  overscroll-behavior-y: none;\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 14px;\n  background-color: rgb(1, 22, 39);\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n.layout {\n  display: grid;\n  height: 100vh;\n  grid-template-areas:\n    'explorer tabs'\n    'nav breadcrumbs'\n    'nav code';\n  grid-template-columns: 300px 1fr;\n  grid-template-rows: 40px 20px 1fr;\n}\n\n.explorer {\n  background-color: hsl(206, 100%, 3%);\n  display: flex;\n  align-items: center;\n  padding-inline-start: 15px;\n  grid-area: explorer;\n}\n\n.explorer h1 {\n  color:hsl(0, 0%, 70%);\n  font-size: 12px;\n  font-weight: 400;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n}\n\n.tabs {\n  display: flex;\n  background-color: hsl(206, 100%, 3%);\n  overflow: scroll;\n  column-gap: 1px;\n  grid-area: tabs;\n}\n\n.tabs:empty {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.tab {\n  display: flex;\n  background-color: hsl(206, 100%, 11%);\n  color: hsl(0, 0%, 70%);\n}\n\n.tab a {\n  color: hsl(0, 0%, 50%);\n  text-decoration: none;\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n}\n\n.tab a.close-button {\n  width: 32px;\n  justify-content: center;\n}\n\n.tab a.close-button:hover {\n  color:hsl(0, 0%, 100%);\n}\n\n.tab a.active-tab {\n  color:hsl(0, 0%, 100%)\n}\n\n.tab a:first-child {\n  padding-left: 10px;\n}\n\n.tab:has(.active-tab),\n.tab:has(.active-tab):hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.tab:hover {\n  background-color: hsl(206, 100%, 9%);\n}\n\n.breadcrumbs {\n  grid-area: breadcrumbs;\n  color:hsl(0, 0%, 50%);\n}\n\n.nav {\n  color: white;\n  overflow: scroll;\n  background-color: hsl(206, 100%, 3%);\n  grid-area: nav;\n}\n\n.nav ul {\n  margin: 0;\n  padding-left: 0;\n}\n\n.nav ul li summary,\n.nav ul li a {\n  padding: 4px;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.nav li {\n  display: block;\n  position: relative;\n}\n\n.nav li:hover {\n  cursor: pointer;\n}\n\n.nav li:has(li:hover) summary:hover,\n.nav li:has(li:hover) a:hover,\n.nav > ul > li > details > summary:hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.nav li:has(a.active) a.active {\n  background-color: hsl(206, 100%, 6%);\n}\n\n.nav > ul > li li :is(a, summary) {\n  padding-left: 20px;\n}\n\n.nav > ul > li li li :is(a, summary) {\n  padding-left: 35px;\n}\n\n.nav > ul > li li li li :is(a, summary) {\n  padding-left: 50px;\n}\n\n.nav > ul > li li li li ul :is(a, summary) {\n  padding-left: 65px;\n}\n\n.nav details[open] > summary::marker {\n  content: '▿ ';\n}\n\n.nav details summary::marker {\n  content: '▹ ';\n  color:hsl(0, 0%, 70%);\n}\n\n.nav a {\n  color: white; \n  text-decoration: none;\n  display: block;\n  /* width: 100%; */\n}\n\n.nav-root > details > summary {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: bold;\n}\n\n.code {\n  grid-area: code;\n  background-color: rgb(1, 22, 39);\n  box-sizing: border-box;\n}\n\npre {\n  margin: 0;\n}\n\n.code:has(.loader) {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  border: 10px solid;\n  border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n"
             },
             {
               "path": "src/pages/index.js",
@@ -176,7 +1231,7 @@
               "content": "import { render, screen } from '@testing-library/react';\nimport App from './App';\n\ntest('renders learn react link', () => {\n  render(<App />);\n  const linkElement = screen.getByText(/learn react/i);\n  expect(linkElement).toBeInTheDocument();\n});\n"
             }
           ],
-          "size": 4913,
+          "size": 5241,
           "type": "directory"
         },
         {
@@ -225,7 +1280,7 @@
           "content": "// jest-dom adds custom jest matchers for asserting on DOM nodes.\n// allows you to do things like:\n// expect(element).toHaveTextContent(/react/i)\n// learn more: https://github.com/testing-library/jest-dom\nimport '@testing-library/jest-dom';\n"
         }
       ],
-      "size": 9542,
+      "size": 10490,
       "type": "directory"
     },
     {
@@ -256,6 +1311,6 @@
       "content": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n"
     }
   ],
-  "size": 1288459,
+  "size": 1702060,
   "type": "directory"
 }

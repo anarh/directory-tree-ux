@@ -5,7 +5,9 @@ const BreadCrumbs = () => {
   let location = useLocation();
 
   return (
-    <small className="breadcrumbs">{location.pathname.split('/').join(' ≻ ')}</small>
+    <small className="breadcrumbs">
+      {location.pathname === '/' ? undefined : location.pathname.split('/').join(' ≻ ')}
+    </small>
   );
   };
 
