@@ -1,0 +1,215 @@
+body {
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  background-color: rgb(1, 22, 39);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    'explorer tabs'
+    'nav breadcrumbs'
+    'nav code';
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 40px 20px 1fr;
+}
+
+.explorer {
+  background-color: hsl(206, 100%, 3%);
+  display: flex;
+  align-items: center;
+  padding-inline-start: 15px;
+  grid-area: explorer;
+}
+
+.explorer h1 {
+  color:hsl(0, 0%, 70%);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+  background-color: hsl(206, 100%, 3%);
+  overflow: scroll;
+  column-gap: 1px;
+  grid-area: tabs;
+}
+
+.tabs:empty {
+  background-color: hsl(206, 100%, 8%);
+}
+
+.tab {
+  display: flex;
+  background-color: hsl(206, 100%, 11%);
+  color: hsl(0, 0%, 70%);
+}
+
+.tab a {
+  color: hsl(0, 0%, 50%);
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.tab a.close-button {
+  width: 32px;
+  justify-content: center;
+}
+
+.tab a.close-button:hover {
+  color:hsl(0, 0%, 100%);
+}
+
+.tab a.active-tab {
+  color:hsl(0, 0%, 100%)
+}
+
+.tab a:first-child {
+  padding-left: 10px;
+}
+
+.tab:has(.active-tab),
+.tab:has(.active-tab):hover {
+  background-color: hsl(206, 100%, 8%);
+}
+
+.tab:hover {
+  background-color: hsl(206, 100%, 9%);
+}
+
+.breadcrumbs {
+  grid-area: breadcrumbs;
+  color:hsl(0, 0%, 50%);
+}
+
+.nav {
+  color: white;
+  overflow: scroll;
+  background-color: hsl(206, 100%, 3%);
+  grid-area: nav;
+}
+
+.nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav ul li summary,
+.nav ul li a {
+  padding: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nav li {
+  display: block;
+  position: relative;
+}
+
+.nav li:hover {
+  cursor: pointer;
+}
+
+.nav li:has(li:hover) summary:hover,
+.nav li:has(li:hover) a:hover,
+.nav > ul > li > details > summary:hover {
+  background-color: hsl(206, 100%, 8%);
+}
+
+.nav li:has(a.active) a.active {
+  background-color: hsl(206, 100%, 6%);
+}
+
+.nav > ul > li li :is(a, summary) {
+  padding-left: 20px;
+}
+
+.nav > ul > li li li :is(a, summary) {
+  padding-left: 35px;
+}
+
+.nav > ul > li li li li :is(a, summary) {
+  padding-left: 50px;
+}
+
+.nav > ul > li li li li ul :is(a, summary) {
+  padding-left: 65px;
+}
+
+.nav details[open] > summary::marker {
+  content: '▿ ';
+}
+
+.nav details summary::marker {
+  content: '▹ ';
+  color:hsl(0, 0%, 70%);
+}
+
+.nav a {
+  color: white; 
+  text-decoration: none;
+  display: block;
+  /* width: 100%; */
+}
+
+.nav-root > details > summary {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.code {
+  grid-area: code;
+  background-color: rgb(1, 22, 39);
+  box-sizing: border-box;
+}
+
+pre {
+  margin: 0;
+}
+
+.code:has(.loader) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 10px solid;
+  border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "path": "./",
+  "name": ".",
+  "children": [
+    {
+      "path": "public",
+      "name": "public",
+      "children": [
+        {
+          "path": "public/favicon.ico",
+          "name": "favicon.ico",
+          "extension": ".ico",
+          "size": 3870,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": "public/index.html",
+          "name": "index.html",
+          "extension": ".html",
+          "size": 1721,
+          "type": "file",
+          "language": "html",
+          "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#000000\" />\n    <meta\n      name=\"description\"\n      content=\"Web site created using create-react-app\"\n    />\n    <link rel=\"apple-touch-icon\" href=\"%PUBLIC_URL%/logo192.png\" />\n    <!--\n      manifest.json provides metadata used when your web app is installed on a\n      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/\n    -->\n    <link rel=\"manifest\" href=\"%PUBLIC_URL%/manifest.json\" />\n    <!--\n      Notice the use of %PUBLIC_URL% in the tags above.\n      It will be replaced with the URL of the `public` folder during the build.\n      Only files inside the `public` folder can be referenced from the HTML.\n\n      Unlike \"/favicon.ico\" or \"favicon.ico\", \"%PUBLIC_URL%/favicon.ico\" will\n      work correctly both with client-side routing and a non-root public URL.\n      Learn how to configure a non-root public URL by running `npm run build`.\n    -->\n    <title>React App</title>\n  </head>\n  <body>\n    <noscript>You need to enable JavaScript to run this app.</noscript>\n    <div id=\"root\"></div>\n    <!--\n      This HTML file is a template.\n      If you open it directly in the browser, you will see an empty page.\n\n      You can add webfonts, meta tags, or analytics to this file.\n      The build step will place the bundled scripts into the <body> tag.\n\n      To begin the development, run `npm start` or `yarn start`.\n      To create a production bundle, use `npm run build` or `yarn build`.\n    -->\n  </body>\n</html>\n"
+        },
+        {
+          "path": "public/logo192.png",
+          "name": "logo192.png",
+          "extension": ".png",
+          "size": 5347,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": "public/logo512.png",
+          "name": "logo512.png",
+          "extension": ".png",
+          "size": 9664,
+          "type": "file",
+          "language": "txt",
+          "content": "No preview available for this file due to file size or file type"
+        },
+        {
+          "path": "public/manifest.json",
+          "name": "manifest.json",
+          "extension": ".json",
+          "size": 492,
+          "type": "file",
+          "language": "json",
+          "content": "{\n  \"short_name\": \"React App\",\n  \"name\": \"Create React App Sample\",\n  \"icons\": [\n    {\n      \"src\": \"favicon.ico\",\n      \"sizes\": \"64x64 32x32 24x24 16x16\",\n      \"type\": \"image/x-icon\"\n    },\n    {\n      \"src\": \"logo192.png\",\n      \"type\": \"image/png\",\n      \"sizes\": \"192x192\"\n    },\n    {\n      \"src\": \"logo512.png\",\n      \"type\": \"image/png\",\n      \"sizes\": \"512x512\"\n    }\n  ],\n  \"start_url\": \".\",\n  \"display\": \"standalone\",\n  \"theme_color\": \"#000000\",\n  \"background_color\": \"#ffffff\"\n}\n"
+        },
+        {
+          "path": "public/robots.txt",
+          "name": "robots.txt",
+          "extension": ".txt",
+          "size": 67,
+          "type": "file",
+          "language": "txt",
+          "content": "# https://www.robotstxt.org/robotstxt.html\nUser-agent: *\nDisallow:\n"
+        }
+      ],
+      "size": 21161,
+      "type": "directory"
+    },
+    {
+      "path": "src",
+      "name": "src",
+      "children": [
+        {
+          "path": "src/components",
+          "name": "components",
+          "children": [
+            {
+              "path": "src/components/tabs",
+              "name": "tabs",
+              "children": [
+                {
+                  "path": "src/components/tabs/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 1319,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import React, { useEffect, useState } from \"react\";\nimport { NavLink, useLocation } from \"react-router-dom\";\n\nconst Tabs = () => {\n  let location = useLocation();\n  const [tabs, setTabs] = useState([]);\n\n  const handleClick = (e, i) => {\n    if (!e.target.previousSibling.classList.contains('active-tab')) {\n      e.preventDefault();\n    }\n    const t = tabs.filter((tab, index) => i !== index);\n    setTabs([...t]);\n  };\n\n  useEffect(() => {\n    if (!tabs.includes(location.pathname)) {\n      setTabs([...tabs, location.pathname]);\n    }\n  }, [location, tabs]);\n\n    return (\n      <div className=\"tabs\">\n        {\n          tabs.length && tabs.map((tab, i) => {\n            const t = tab.split('/');\n            const tabName = t[t.length - 1];\n            return (<div className=\"tab\" key={i}>\n              <NavLink \n                to={tab} \n                className={({ isActive }) => isActive ? 'active-tab' : undefined}\n              >\n                {tabName}\n              </NavLink>\n              {\n                tab === '/' ? \n                undefined : \n                <NavLink\n                  onClick={e => handleClick(e, i)}\n                  to={tabs[i - 1]}\n                >x</NavLink>\n              }\n            </div>)\n          })\n        }\n      </div>\n    );\n  };\n\n  export default Tabs;"
+                }
+              ],
+              "size": 1319,
+              "type": "directory"
+            }
+          ],
+          "size": 1319,
+          "type": "directory"
+        },
+        {
+          "path": "src/pages",
+          "name": "pages",
+          "children": [
+            {
+              "path": "src/pages/code",
+              "name": "code",
+              "children": [
+                {
+                  "path": "src/pages/code/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 208,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import React from \"react\";\nimport { Outlet } from \"react-router-dom\";\n\nconst Index = () => {\n    return (\n      <React.Fragment>\n        <Outlet />\n      </React.Fragment>\n    );\n  };\n\n  export default Index;"
+                }
+              ],
+              "size": 208,
+              "type": "directory"
+            },
+            {
+              "path": "src/pages/layout",
+              "name": "layout",
+              "children": [
+                {
+                  "path": "src/pages/layout/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 478,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import React from 'react';\nimport { Outlet } from \"react-router-dom\";\nimport renderDirectoryStructure from \"../../render-directory-structure\";\nimport data from '../../data.json';\nimport Tabs from '../../components/tabs';\n\nconst Layout = () => (\n  <div className=\"layout\">\n    <div className='explorer'>\n      <h1>Explorer</h1>\n    </div>\n    <Tabs />\n    <nav className=\"nav\">\n      {renderDirectoryStructure(data)}\n    </nav>\n    <Outlet />\n  </div>\n);\n\nexport default Layout;\n"
+                }
+              ],
+              "size": 478,
+              "type": "directory"
+            },
+            {
+              "path": "src/pages/no-match",
+              "name": "no-match",
+              "children": [
+                {
+                  "path": "src/pages/no-match/index.js",
+                  "name": "index.js",
+                  "extension": ".js",
+                  "size": 279,
+                  "type": "file",
+                  "language": "js",
+                  "content": "import { Link } from \"react-router-dom\";\n\nconst NoMatch = () => {\n    return (\n      <div className=\"code\">\n        <h2>It looks like you're lost...</h2>\n        <p>\n          <Link to=\"/\">Go to the home page</Link>\n        </p>\n      </div>\n    );\n  }\n\n  export default NoMatch;"
+                }
+              ],
+              "size": 279,
+              "type": "directory"
+            },
+            {
+              "path": "src/pages/index.css",
+              "name": "index.css",
+              "extension": ".css",
+              "size": 3369,
+              "type": "file",
+              "language": "css",
+              "content": "body {\n  overscroll-behavior-y: none;\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 14px;\n  background-color: rgb(1, 22, 39);\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;\n}\n\n.layout {\n  display: grid;\n  height: 100vh;\n  grid-template-areas:\n    'explorer tabs'\n    'nav code';\n  grid-template-columns: 300px 1fr;\n  grid-template-rows: 40px 1fr;\n}\n\n.explorer {\n  background-color: hsl(206, 100%, 3%);\n  display: flex;\n  align-items: center;\n  padding-inline-start: 15px; \n}\n\n.explorer h1 {\n  color:hsl(0, 0%, 70%);\n  font-size: 12px;\n  font-weight: 400;\n  text-transform: uppercase;\n  margin: 0;\n  padding: 0;\n}\n\n.tabs {\n  display: flex;\n  background-color: hsl(206, 100%, 3%);\n  overflow: scroll;\n  column-gap: 1px;\n}\n\n.tab {\n  display: flex;\n  background-color: hsl(206, 100%, 11%);\n  color: hsl(0, 0%, 70%);\n  padding: 0 10px;\n  column-gap: 10px;\n}\n\n.tab a {\n  color: hsl(0, 0%, 50%);\n  text-decoration: none;\n  white-space: nowrap;\n  display: flex;\n  align-items: center;\n}\n\n.tab a.active-tab {\n  color:hsl(0, 0%, 100%)\n}\n\n.tab:has(.active-tab),\n.tab:has(.active-tab):hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.tab:hover {\n  background-color: hsl(206, 100%, 9%);\n}\n\n.nav {\n  color: white;\n  overflow: scroll;\n  background-color: hsl(206, 100%, 3%);\n}\n\n.nav ul {\n  margin: 0;\n  padding-left: 0;\n}\n\n.nav ul li summary,\n.nav ul li a {\n  padding: 4px;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.nav li {\n  display: block;\n  position: relative;\n}\n\n.nav li:hover {\n  cursor: pointer;\n}\n\n.nav li:has(li:hover) summary:hover,\n.nav li:has(li:hover) a:hover,\n.nav > ul > li > details > summary:hover {\n  background-color: hsl(206, 100%, 8%);\n}\n\n.nav li:has(a.active) a.active {\n  background-color: hsl(206, 100%, 6%);\n}\n\n/* .nav ul li a,\n.nav ul li summary {\n  padding-left: 25px;\n} */\n\n.nav > ul > li li :is(a, summary) {\n  padding-left: 20px;\n}\n\n.nav > ul > li li li :is(a, summary) {\n  padding-left: 35px;\n}\n\n.nav > ul > li li li li :is(a, summary) {\n  padding-left: 50px;\n}\n\n.nav > ul > li li li li ul :is(a, summary) {\n  padding-left: 65px;\n}\n\n.nav details[open] > summary::marker {\n  content: '▿ ';\n}\n\n.nav details summary::marker {\n  content: '▹ ';\n  color:hsl(0, 0%, 70%);\n}\n\n.nav a {\n  color: white; \n  text-decoration: none;\n  display: block;\n  /* width: 100%; */\n}\n\n.nav-root > details > summary {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: bold;\n}\n\n.code {\n  /* height: 100vh; */\n  /* flex-grow: 1; */\n  background-color: rgb(1, 22, 39);\n  box-sizing: border-box;\n}\n\npre {\n  margin: 0;\n}\n\n.code:has(.loader) {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.loader {\n  width: 48px;\n  height: 48px;\n  border-radius: 50%;\n  display: inline-block;\n  position: relative;\n  border: 10px solid;\n  border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n"
+            },
+            {
+              "path": "src/pages/index.js",
+              "name": "index.js",
+              "extension": ".js",
+              "size": 333,
+              "type": "file",
+              "language": "js",
+              "content": "import { useRoutes } from \"react-router-dom\";\nimport createRoutesFromDirectoryStructure from \"../create-routes-from-directory-structure\";\nimport data from '../data.json';\n\nconst App = () => {\n  const routes = createRoutesFromDirectoryStructure(data);\n  const routesJsx = useRoutes(routes);\n  return routesJsx;\n}\n\nexport default App;\n"
+            },
+            {
+              "path": "src/pages/index.test.js",
+              "name": "index.test.js",
+              "extension": ".js",
+              "size": 246,
+              "type": "file",
+              "language": "js",
+              "content": "import { render, screen } from '@testing-library/react';\nimport App from './App';\n\ntest('renders learn react link', () => {\n  render(<App />);\n  const linkElement = screen.getByText(/learn react/i);\n  expect(linkElement).toBeInTheDocument();\n});\n"
+            }
+          ],
+          "size": 4913,
+          "type": "directory"
+        },
+        {
+          "path": "src/create-routes-from-directory-structure.js",
+          "name": "create-routes-from-directory-structure.js",
+          "extension": ".js",
+          "size": 1069,
+          "type": "file",
+          "language": "js",
+          "content": "import React from \"react\";\nimport Code from \"./pages/code\";\nimport Layout from \"./pages/layout\";\nimport NoMatch from \"./pages/no-match\";\n\nconst getChildren = (directory) => {\n    return (\n      [...directory.children && directory.children.map((child) => {\n        if (child.type === 'directory') {\n          return {\n            element: <Code />,\n            path: `/${child.path}`,\n            children: getChildren(child)\n          };\n        } else {\n          const CodeBehind = React.lazy(() => import(`./code-behind/${child.path}.js`));\n          return {\n            element: <React.Suspense fallback={<div className=\"code\"><div className=\"loader\" /></div>}><CodeBehind /></React.Suspense>,\n            path: `/${child.path}`\n          };\n        }\n      })]\n    );\n  };\n\n  const createRoutesFromDirectoryStructure = directory => {\n    return [\n      {\n        path: '/',\n        element: <Layout />,\n        children: getChildren(directory)\n      },\n      { path: \"*\", element: <NoMatch /> }\n    ];\n  };\n  \n  export default createRoutesFromDirectoryStructure;\n"
+        },
+        {
+          "path": "src/index.js",
+          "name": "index.js",
+          "extension": ".js",
+          "size": 648,
+          "type": "file",
+          "language": "js",
+          "content": "import React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport { BrowserRouter } from \"react-router-dom\";\nimport './pages/index.css';\nimport App from './pages/index';\n// import reportWebVitals from './reportWebVitals';\n\nconst root = ReactDOM.createRoot(document.getElementById('root'));\nroot.render(\n  <React.StrictMode>\n    <BrowserRouter>\n      <App />\n    </BrowserRouter>\n  </React.StrictMode>\n);\n\n// If you want to start measuring performance in your app, pass a function\n// to log results (for example: reportWebVitals(console.log))\n// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals\n// reportWebVitals();\n"
+        },
+        {
+          "path": "src/render-directory-structure.js",
+          "name": "render-directory-structure.js",
+          "extension": ".js",
+          "size": 990,
+          "type": "file",
+          "language": "js",
+          "content": "import { NavLink } from \"react-router-dom\";\n\nconst getChildren = (directory) => {\n  return (\n      <ul>\n        {directory.children && directory.children.map((child) => {\n          if (child.type === \"directory\") {\n            return <li key={child.path}>\n              <details>\n                <summary>{child.name}</summary> \n                {getChildren(child)}\n              </details>\n            </li>;\n          } else {\n            return <li key={child.path}>\n              <NavLink to={child.path} className={({ isActive }) => isActive ? 'active' : undefined}>\n                {child.name}\n              </NavLink>\n            </li>;\n          }\n        })}\n      </ul>\n  );\n};\n\nconst renderDirectoryStructure = directory => {\n  return (\n    <ul>\n      <li className=\"nav-root\">\n        <details open>\n          <summary>{`Directory Tree UI`}</summary>\n          {getChildren(directory)}\n        </details>\n      </li>\n    </ul>\n  )\n};\n\nexport default renderDirectoryStructure;\n\n"
+        },
+        {
+          "path": "src/reportWebVitals.js",
+          "name": "reportWebVitals.js",
+          "extension": ".js",
+          "size": 362,
+          "type": "file",
+          "language": "js",
+          "content": "const reportWebVitals = onPerfEntry => {\n  if (onPerfEntry && onPerfEntry instanceof Function) {\n    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {\n      getCLS(onPerfEntry);\n      getFID(onPerfEntry);\n      getFCP(onPerfEntry);\n      getLCP(onPerfEntry);\n      getTTFB(onPerfEntry);\n    });\n  }\n};\n\nexport default reportWebVitals;\n"
+        },
+        {
+          "path": "src/setupTests.js",
+          "name": "setupTests.js",
+          "extension": ".js",
+          "size": 241,
+          "type": "file",
+          "language": "js",
+          "content": "// jest-dom adds custom jest matchers for asserting on DOM nodes.\n// allows you to do things like:\n// expect(element).toHaveTextContent(/react/i)\n// learn more: https://github.com/testing-library/jest-dom\nimport '@testing-library/jest-dom';\n"
+        }
+      ],
+      "size": 9542,
+      "type": "directory"
+    },
+    {
+      "path": "package-lock.json",
+      "name": "package-lock.json",
+      "extension": ".json",
+      "size": 1253317,
+      "type": "file",
+      "language": "txt",
+      "content": "No preview available for this file due to file size or file type"
+    },
+    {
+      "path": "package.json",
+      "name": "package.json",
+      "extension": ".json",
+      "size": 1080,
+      "type": "file",
+      "language": "json",
+      "content": "{\n  \"name\": \"directory-tree-ui\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"@testing-library/jest-dom\": \"^5.16.5\",\n    \"@testing-library/react\": \"^13.4.0\",\n    \"@testing-library/user-event\": \"^13.5.0\",\n    \"highlight.js\": \"^11.7.0\",\n    \"react\": \"^18.2.0\",\n    \"react-dom\": \"^18.2.0\",\n    \"react-highlight\": \"^0.15.0\",\n    \"react-router-dom\": \"^6.8.1\",\n    \"react-scripts\": \"5.0.1\",\n    \"react-syntax-highlighter\": \"^15.5.0\",\n    \"web-vitals\": \"^2.1.4\"\n  },\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\",\n    \"eject\": \"react-scripts eject\"\n  },\n  \"eslintConfig\": {\n    \"extends\": [\n      \"react-app\",\n      \"react-app/jest\"\n    ]\n  },\n  \"browserslist\": {\n    \"production\": [\n      \">0.2%\",\n      \"not dead\",\n      \"not op_mini all\"\n    ],\n    \"development\": [\n      \"last 1 chrome version\",\n      \"last 1 firefox version\",\n      \"last 1 safari version\"\n    ]\n  },\n  \"devDependencies\": {\n    \"change-case\": \"^4.1.2\",\n    \"directory-tree\": \"^3.5.1\",\n    \"is-text-path\": \"^2.0.0\"\n  }\n}\n"
+    },
+    {
+      "path": "README.md",
+      "name": "README.md",
+      "extension": ".md",
+      "size": 3359,
+      "type": "file",
+      "language": "md",
+      "content": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n"
+    }
+  ],
+  "size": 1288459,
+  "type": "directory"
+}
